@@ -2,14 +2,105 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>loginPage</title>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>loginPage</title>
+   <style>
+      *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      body{
+         font-family: sans-serif;
+      }
+      .main_container{
+         width: 100%;
+         height: 100vh;
+         background-image: linear-gradient(to bottom right ,#4488d2,#7d53b5);
+         background-repeat: no-repeat;
+         position: relative;
+
+         display: flex;
+      }
+      .container{
+         background-color: whitesmoke;
+         width: 400px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 40px;
+         border-radius: 20px;
+
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+      }
+      .form_container{
+         width: 100%;
+         margin-top: 40px;
+      }
+      .form_container form{
+         width: 100%;
+         margin-bottom: 40px;
+      }
+
+      .form_container input{
+         width: 100%;
+         padding: 15px;
+         margin-top: 20px;
+         border: 0;
+         border-bottom: 2px solid #333;
+         background-color: whitesmoke;
+         font-family: sans-serif !important;
+         color: #333;
+         font-size: 18px;
+         outline: none;
+      }
+      .form_container .submit_btn{
+         border: 0;
+         background-image: linear-gradient(to bottom right ,#4489d3,#7d53b5);
+         color: whitesmoke;
+         margin-top: 40px;
+         cursor: pointer;
+      }
+      .actions_container{
+         text-align: center;
+      }
+      .actions_container .action{
+         margin-bottom: 10px;
+         color: rgb(104, 104, 104);
+         font-weight: bold;
+      }
+      .actions_container .action a{
+         color: #4489d3;
+         text-decoration: none;
+      }
+
+
+
+   </style>
 </head>
 
 <body>
-     <h1>loginPage</h1>
+   <div class="main_container">
+      <div class="container">
+         <h1>Login</h1>
+         <div class="form_container">
+            <form action="">
+               <input type="text" name="" id="" placeholder="Email"/>
+               <input type="password" name="" id="" placeholder="Password"/>
+               <input type="submit" class="submit_btn" value="Login">
+            </form>
+         </div>
+         <div class="actions_container">
+            <p class="action">Forgot <a href="#">Password</a></p>
+            <p class="action">Don't have an account? <a href="#">Sign Up</a></p>
+         </div>
+      </div>
+   </div>
 </body>
 
 </html>
